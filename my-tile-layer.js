@@ -1,5 +1,3 @@
-import * as turf from "@turf/turf";
-
 import {TileLayer, BitmapLayer} from './deck-layers';
 
 
