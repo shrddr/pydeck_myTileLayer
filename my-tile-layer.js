@@ -6,13 +6,13 @@ import {TileLayer, BitmapLayer} from './deck-layers';
 class MyTileLayer extends TileLayer {
   renderSubLayers(props){
       const {
-        bbox: {west, south, east, north}
+        bbox: {left, bottom, right, top}
       } = props.tile;
 
       return new BitmapLayer(props, {
         data: null,
         image: props.data,
-        bounds: [west, south, east, north]
+        bounds: [left, bottom, right, top]
       });
     }
 }
