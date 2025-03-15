@@ -1,7 +1,7 @@
-Tile layer for pydeck
+Orthographic Tiles in pydeck
 ========================
 
-Using custom layer in pydeck to handle Tile layer with OrthographicView ( based on [pydeck_custom_layer](https://github.com/ajduberstein/pydeck_custom_layer) )
+Using custom layer in pydeck to make TileLayer work with OrthographicView (out of the box, tile layers only work in geospatial views)
 
 ```python
 
@@ -38,3 +38,4 @@ r = pdk.Deck(
 
 r.to_html("tilemap.html")
 ```
+based on [pydeck_custom_layer](https://github.com/ajduberstein/pydeck_custom_layer)
